@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdenour Agag — Réseaux, Systèmes, Cloud & Cybersécurité</title>
+  <meta name="description" content="Portfolio d'Abdenour Agag, étudiant en Master Informatique (RSA) à l'Université Paris Cité : réseaux, systèmes, Cloud, DevSecOps et cybersécurité." />
+
+  <!-- Polices Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Icônes : Font Awesome (version script, compatible partout) -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header class="navbar" id="navbar">
+    <nav class="container nav-inner">
+      <a href="#accueil" class="logo"><span class="logo-bracket">&lt;</span>Abdenour<span class="logo-bracket">/&gt;</span></a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#a-propos" class="nav-link"><span data-i18n="nav.about">À propos</span></a></li>
+        <li><a href="#parcours" class="nav-link"><span data-i18n="nav.path">Parcours</span></a></li>
+        <li><a href="#competences" class="nav-link"><span data-i18n="nav.skills">Compétences</span></a></li>
+        <li><a href="#projets" class="nav-link"><span data-i18n="nav.projects">Projets</span></a></li>
+        <li><a href="#contact" class="nav-link nav-cta"><span data-i18n="nav.contact">Me contacter</span></a></li>
+      </ul>
+
+      <div class="nav-tools">
+        <!-- Bouton de traduction FR / EN -->
+        <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch to English">
+          <i class="fa-solid fa-globe"></i> <span id="langLabel">EN</span>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="accueil">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <p class="hero-status"><span class="status-dot"></span> <span data-i18n="hero.status">Disponible pour un stage de fin d'études — 6 mois dès février 2027</span></p>
+
+        <h1 class="hero-title"><span data-i18n="hero.hello">Bonjour, je suis</span> <span class="gradient-text">Abdenour Agag</span></h1>
+
+        <p class="hero-role">
+          <span class="mono">$</span> <span id="typed">Réseaux · Systèmes · Cloud · Cybersécurité</span><span class="cursor">_</span>
+        </p>
+
+        <p class="hero-tagline"><span data-i18n="hero.tagline">Je conçois, sécurise et automatise des infrastructures : de la configuration Cisco au pipeline DevSecOps, jusqu'au déploiement sur Kubernetes.</span></p>
+
+        <div class="hero-actions">
+          <a href="#projets" class="btn btn-primary"><span data-i18n="hero.cta">Voir mes projets</span> <i class="fa-solid fa-arrow-down"></i></a>
+          <!-- Dépose ton CV dans assets/ sous le nom cv-abdenour-agag.pdf -->
+          <a href="assets/cv-abdenour-agag.pdf" class="btn btn-ghost" download><span data-i18n="hero.cv">Télécharger mon CV</span> <i class="fa-solid fa-file-arrow-down"></i></a>
+        </div>
+
+        <ul class="hero-stats">
+          <li><strong>6</strong><span><span data-i18n="hero.stat1">projets publiés</span></span></li>
+          <li><strong>FCF</strong><span><span data-i18n="hero.stat2">certifié Fortinet</span></span></li>
+          <li><strong>CCNA</strong><span><span data-i18n="hero.stat3">en préparation</span></span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== À PROPOS ===================== -->
+    <section class="section" id="a-propos">
+      <div class="container about-grid">
+        <div class="about-photo reveal">
+          
+          <div class="photo-frame">
+            <img src="assets/img/photo.jpg" alt="Photo d'Abdenour Agag"
+                 onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20400%20400%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%237c8cff%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%235ee7c4%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22%231a1d29%22/%3E%3Ccircle%20cx%3D%22200%22%20cy%3D%22200%22%20r%3D%22120%22%20fill%3D%22none%22%20stroke%3D%22url%28%23g%29%22%20stroke-width%3D%223%22/%3E%3Ctext%20x%3D%22200%22%20y%3D%22228%22%20text-anchor%3D%22middle%22%20font-family%3D%22Inter%2C%20Arial%2C%20sans-serif%22%20font-size%3D%2296%22%20font-weight%3D%22800%22%20fill%3D%22url%28%23g%29%22%3EAA%3C/text%3E%3C/svg%3E';" />
+          </div>
+        </div>
+
+        <div class="about-text reveal">
+          <p class="section-kicker"><span data-i18n="about.kicker">01 — À propos</span></p>
+          <h2 class="section-title"><span data-i18n="about.title">Du câble réseau au cluster Kubernetes</span></h2>
+          <p><span data-i18n="about.p1">Étudiant en <strong>Master Informatique — parcours RSA</strong> à l'Université Paris Cité, je me spécialise dans les réseaux, l'administration système, le Cloud et la cybersécurité. Certifié <strong>Fortinet FCF</strong>, je prépare actuellement le <strong>CCNA</strong>.</span></p>
+          <p><span data-i18n="about.p2">Mes projets vont de l'orchestration de microservices sur Kubernetes à la détection d'intrusions par Machine Learning, en passant par la sécurisation de chaînes CI/CD. Mon approche : automatiser ce qui peut l'être, intégrer la sécurité dès la conception et documenter chaque choix.</span></p>
+
+          <ul class="about-facts">
+            <li><i class="fa-solid fa-graduation-cap"></i> <span data-i18n="about.f1">Master Informatique (RSA) — Université Paris Cité, 2025 – 2027</span></li>
+            <li><i class="fa-solid fa-certificate"></i> <span data-i18n="about.f2">Fortinet Certified Fundamentals (FCF) · CCNA en préparation</span></li>
+            <li><i class="fa-solid fa-location-dot"></i> Paris, Île-de-France</li>
+            <li><i class="fa-solid fa-language"></i> <span data-i18n="about.f4">Arabe · Français · Anglais</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PARCOURS ===================== -->
+    <section class="section section-alt" id="parcours">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-kicker"><span data-i18n="path.kicker">02 — Parcours</span></p>
+          <h2 class="section-title"><span data-i18n="path.title">Formation & expérience</span></h2>
+        </div>
+
+        <ol class="timeline">
+          <!-- Formation -->
+          <li class="timeline-item reveal">
+            <div class="timeline-dot"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="timeline-card">
+              <p class="timeline-date"><span data-i18n="path.m.date">2025 – 2027</span></p>
+              <h3><span data-i18n="path.m.title">Master Informatique — Réseaux et Systèmes Autonomes (RSA)</span></h3>
+              <p class="timeline-place">Université Paris Cité · Paris</p>
+              <p class="timeline-desc"><span data-i18n="path.m.desc">Réseaux, systèmes distribués et microservices, sécurité, Cloud, Machine Learning et Business Intelligence. Recherche d'un stage de fin d'études de 6 mois à partir de février 2027.</span></p>
+            </div>
+          </li>
+
+          <!-- Expérience -->
+          <li class="timeline-item reveal">
+            <div class="timeline-dot"><i class="fa-solid fa-briefcase"></i></div>
+            <div class="timeline-card">
+              <p class="timeline-date"><span data-i18n="path.e.date">Janvier – Juin 2024</span></p>
+              <h3><span data-i18n="path.e.title">Stagiaire Développeur Web</span></h3>
+              <p class="timeline-place"><span data-i18n="path.e.place">E.P.A.L. (Entreprise Portuaire d'Alger) · Alger, Algérie</span></p>
+              <p class="timeline-desc"><span data-i18n="path.e.desc">Analyse des besoins des utilisateurs et développement d'une application web de gestion des congés, puis tests et documentation technique.</span></p>
+              <ul class="tags"><li>Laravel</li><li>PHP</li><li>MySQL</li><li>JavaScript</li></ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== COMPÉTENCES ===================== -->
+    <section class="section" id="competences">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-kicker"><span data-i18n="skills.kicker">03 — Compétences</span></p>
+          <h2 class="section-title"><span data-i18n="skills.title">Ma boîte à outils</span></h2>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Réseaux -->
+          <div class="skill-group skill-wide reveal">
+            <h3><i class="fa-solid fa-network-wired"></i> <span data-i18n="skills.net">Réseaux</span></h3>
+            <div class="badges">
+              <span class="badge"><i class="fa-solid fa-server"></i> <span data-i18n="b.cisco">Switches & routeurs Cisco (Catalyst)</span></span>
+              <span class="badge"><i class="fa-solid fa-globe"></i> TCP/IP</span>
+              <span class="badge">IPv4 / IPv6</span>
+              <span class="badge"><i class="fa-solid fa-route"></i> OSPF</span>
+              <span class="badge">EIGRP</span>
+              <span class="badge">RIP</span>
+              <span class="badge">VRF</span>
+              <span class="badge">VLAN</span>
+              <span class="badge">Trunking 802.1Q</span>
+              <span class="badge"><span data-i18n="b.intervlan">Routage inter-VLAN</span></span>
+              <span class="badge">STP</span>
+              <span class="badge">EtherChannel</span>
+              <span class="badge">FHRP</span>
+              <span class="badge">NAT</span>
+              <span class="badge">QoS</span>
+              <span class="badge">DHCP</span>
+              <span class="badge">DNS</span>
+              <span class="badge">NTP</span>
+              <span class="badge">SNMP</span>
+              <span class="badge">Syslog</span>
+              <span class="badge">SSH</span>
+              <span class="badge">FTP / TFTP</span>
+              <span class="badge"><i class="fa-solid fa-magnifying-glass"></i> Wireshark</span>
+              <span class="badge"><i class="fa-solid fa-screwdriver-wrench"></i> <span data-i18n="b.troubleshoot">Dépannage réseau</span></span>
+              <span class="badge"><i class="fa-solid fa-tower-cell"></i> 5G (slicing eMBB / URLLC / mMTC)</span>
+              <span class="badge">NS-3</span>
+            </div>
+          </div>
+
+          <!-- Sécurité -->
+          <div class="skill-group skill-wide reveal">
+            <h3><i class="fa-solid fa-shield-halved"></i> <span data-i18n="skills.sec">Cybersécurité</span></h3>
+            <div class="badges">
+              <span class="badge"><i class="fa-solid fa-lock"></i> <span data-i18n="b.netsec">Sécurité réseau</span></span>
+              <span class="badge"><i class="fa-solid fa-fire"></i> Fortinet</span>
+              <span class="badge"><span data-i18n="b.firewall">Pare-feu</span></span>
+              <span class="badge">ACL</span>
+              <span class="badge">VPN</span>
+              <span class="badge">IPsec</span>
+              <span class="badge">GRE</span>
+              <span class="badge">DMVPN</span>
+              <span class="badge">TLS</span>
+              <span class="badge">Port Security</span>
+              <span class="badge">DHCP Snooping</span>
+              <span class="badge">Dynamic ARP Inspection</span>
+              <span class="badge"><i class="fa-solid fa-eye"></i> IDS / IPS</span>
+              <span class="badge"><span data-i18n="b.siem">Notions SIEM</span></span>
+              <span class="badge"><span data-i18n="b.soc">Notions SOC</span></span>
+              <span class="badge">MITRE ATT&amp;CK</span>
+              <span class="badge">Antivirus</span>
+              <span class="badge"><i class="fa-solid fa-bug"></i> Trivy</span>
+              <span class="badge">Semgrep</span>
+              <span class="badge">Gitleaks</span>
+              <span class="badge">Dependabot</span>
+            </div>
+          </div>
+
+          <!-- Cloud & DevOps -->
+          <div class="skill-group reveal">
+            <h3><i class="fa-solid fa-cloud"></i> Cloud & DevOps</h3>
+            <div class="badges">
+              <span class="badge"><i class="fa-brands fa-docker"></i> Docker</span>
+              <span class="badge"><i class="fa-solid fa-dharmachakra"></i> Kubernetes</span>
+              <span class="badge">Minikube</span>
+              <span class="badge">kind</span>
+              <span class="badge"><i class="fa-solid fa-server"></i> Ingress Nginx</span>
+              <span class="badge">RBAC</span>
+              <span class="badge"><i class="fa-solid fa-gears"></i> GitHub Actions</span>
+              <span class="badge">CI/CD</span>
+              <span class="badge">GHCR</span>
+              <span class="badge"><i class="fa-brands fa-git-alt"></i> Git</span>
+              <span class="badge"><i class="fa-brands fa-github"></i> GitHub</span>
+            </div>
+          </div>
+
+          <!-- Systèmes -->
+          <div class="skill-group reveal">
+            <h3><i class="fa-solid fa-terminal"></i> <span data-i18n="skills.sys">Systèmes & virtualisation</span></h3>
+            <div class="badges">
+              <span class="badge"><i class="fa-brands fa-linux"></i> Linux</span>
+              <span class="badge">Debian</span>
+              <span class="badge"><i class="fa-brands fa-ubuntu"></i> Ubuntu</span>
+              <span class="badge"><i class="fa-solid fa-terminal"></i> Shell / Bash</span>
+              <span class="badge"><i class="fa-brands fa-windows"></i> PowerShell</span>
+              <span class="badge"><i class="fa-brands fa-windows"></i> Windows Server</span>
+              <span class="badge">Active Directory</span>
+              <span class="badge">GPO</span>
+              <span class="badge"><i class="fa-solid fa-cubes"></i> VMware</span>
+            </div>
+          </div>
+
+          <!-- Développement -->
+          <div class="skill-group reveal">
+            <h3><i class="fa-solid fa-code"></i> <span data-i18n="skills.dev">Développement</span></h3>
+            <div class="badges">
+              <span class="badge"><i class="fa-brands fa-python"></i> Python</span>
+              <span class="badge"><i class="fa-brands fa-java"></i> Java</span>
+              <span class="badge"><i class="fa-solid fa-leaf"></i> Spring Boot</span>
+              <span class="badge">gRPC / Protobuf</span>
+              <span class="badge"><i class="fa-solid fa-hashtag"></i> C#</span>
+              <span class="badge">C / C++</span>
+              <span class="badge"><i class="fa-brands fa-php"></i> PHP</span>
+              <span class="badge"><i class="fa-brands fa-laravel"></i> Laravel</span>
+              <span class="badge"><i class="fa-solid fa-flask"></i> Flask</span>
+              <span class="badge">Django</span>
+              <span class="badge"><i class="fa-brands fa-js"></i> JavaScript</span>
+              <span class="badge"><i class="fa-solid fa-wind"></i> Tailwind CSS</span>
+              <span class="badge">Alpine.js</span>
+              <span class="badge"><span data-i18n="b.rest">API REST</span></span>
+              <span class="badge">JSON</span>
+              <span class="badge">XML</span>
+            </div>
+          </div>
+
+          <!-- Données & IA -->
+          <div class="skill-group reveal">
+            <h3><i class="fa-solid fa-brain"></i> <span data-i18n="skills.data">Données & IA</span></h3>
+            <div class="badges">
+              <span class="badge"><i class="fa-solid fa-diagram-project"></i> scikit-learn</span>
+              <span class="badge"><i class="fa-solid fa-brain"></i> TensorFlow / Keras</span>
+              <span class="badge">XGBoost</span>
+              <span class="badge"><i class="fa-solid fa-table"></i> pandas</span>
+              <span class="badge"><span data-i18n="b.pgmpy">pgmpy (réseaux bayésiens)</span></span>
+              <span class="badge">Streamlit</span>
+              <span class="badge"><i class="fa-solid fa-database"></i> PostgreSQL</span>
+              <span class="badge"><i class="fa-solid fa-database"></i> MySQL</span>
+              <span class="badge"><i class="fa-solid fa-database"></i> SQL Server</span>
+              <span class="badge"><i class="fa-solid fa-database"></i> Oracle</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJETS ===================== -->
+    <section class="section section-alt" id="projets">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-kicker"><span data-i18n="proj.kicker">04 — Projets</span></p>
+          <h2 class="section-title"><span data-i18n="proj.title">Ce que j'ai construit</span></h2>
+        </div>
+
+        <!-- Filtres : la valeur data-filter doit correspondre aux data-category des cartes -->
+        <div class="filters reveal" role="group" aria-label="Filtrer les projets">
+          <button class="filter-btn active" data-filter="tous"><span data-i18n="f.all">Tous</span></button>
+          <button class="filter-btn" data-filter="cloud">Cloud & DevOps</button>
+          <button class="filter-btn" data-filter="securite"><span data-i18n="skills.sec">Cybersécurité</span></button>
+          <button class="filter-btn" data-filter="ia"><span data-i18n="f.ia">IA & Data</span></button>
+          <button class="filter-btn" data-filter="web">Web</button>
+        </div>
+
+        
+        <div class="projects-grid">
+
+          <!-- ---------- 1. Pipeline DevSecOps ---------- -->
+          <article class="project-card reveal" data-category="cloud securite">
+            <div class="project-img">
+              
+              <div class="project-cover cover-1"><i class="fa-solid fa-infinity"></i></div>
+            </div>
+            <div class="project-body">
+              <span class="project-type"><span data-i18n="p.personal">Projet personnel</span></span>
+              <h3><span data-i18n="p1.t">Pipeline DevSecOps</span></h3>
+              <p><span data-i18n="p1.d">Chaîne CI/CD GitHub Actions autour d'une API Flask : lint et tests, scans de sécurité du code et des secrets, build d'une image Docker non-root scannée puis publiée sur GHCR uniquement lors d'un push sur main.</span></p>
+              <ul class="tags"><li>GitHub Actions</li><li>Docker</li><li>Trivy</li><li>Semgrep</li><li>Gitleaks</li><li>Flask</li><li>pytest</li></ul>
+              <div class="project-actions">
+                <a href="https://github.com/aboudAG/devsecops-pipeline-demo" target="_blank" rel="noopener" class="btn btn-sm btn-ghost"><i class="fa-brands fa-github"></i> <span data-i18n="btn.code">Voir le code</span></a>
+                <a href="https://github.com/aboudAG/devsecops-pipeline-demo/actions" target="_blank" rel="noopener" class="btn btn-sm btn-primary"><i class="fa-solid fa-play"></i> <span data-i18n="btn.pipeline">Voir le pipeline</span></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ---------- 2. Microservices Kubernetes + gRPC ---------- -->
+          <article class="project-card reveal" data-category="cloud">
+            <div class="project-img">
+              
+              <div class="project-cover cover-2"><i class="fa-solid fa-dharmachakra"></i> </div>
+            </div>
+            <div class="project-body">
+              <span class="project-type"><span data-i18n="p.pair">Projet de Master · en binôme</span></span>
+              <h3><span data-i18n="p2.t">Gestion de stock — Kubernetes & gRPC</span></h3>
+              <p><span data-i18n="p2.d">Application de gestion de stock en microservices Spring Boot communiquant en gRPC, déployée sur Minikube derrière un Ingress Nginx, avec PostgreSQL persistant, RBAC en moindre privilège et Secrets Kubernetes.</span></p>
+              <ul class="tags"><li>Kubernetes</li><li>Spring Boot</li><li>gRPC</li><li>PostgreSQL</li><li>Ingress Nginx</li><li>RBAC</li></ul>
+              <div class="project-actions">
+                <a href="https://github.com/aboudAG/Projet-Microservices" target="_blank" rel="noopener" class="btn btn-sm btn-ghost"><i class="fa-brands fa-github"></i> <span data-i18n="btn.code">Voir le code</span></a>
+                
+                <a href="#" target="_blank" rel="noopener" class="btn btn-sm btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span data-i18n="btn.demo">Démo</span></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ---------- 3. IDS par Machine Learning ---------- -->
+          <article class="project-card reveal" data-category="securite ia">
+            <div class="project-img">
+          
+              <div class="project-cover cover-3"><i class="fa-solid fa-shield-virus"></i></div>
+            </div>
+            <div class="project-body">
+              <span class="project-type"><span data-i18n="p.academic">Projet académique</span></span>
+              <h3><span data-i18n="p3.t">IDS intelligent par Machine Learning</span></h3>
+              <p><span data-i18n="p3.d">Détection d'intrusions réseau sur CIC-IDS2017 : comparaison Random Forest, SVM et réseau de neurones. Le Random Forest atteint 99,76 % d'accuracy et 0,21 % de faux positifs sur 504 473 flux de test.</span></p>
+              <ul class="tags"><li>Python</li><li>scikit-learn</li><li>Random Forest</li><li>CIC-IDS2017</li><li>Streamlit</li></ul>
+              <div class="project-actions">
+                <a href="https://github.com/aboudAG/intelligent-network-ids" target="_blank" rel="noopener" class="btn btn-sm btn-ghost"><i class="fa-brands fa-github"></i> <span data-i18n="btn.code">Voir le code</span></a>
+                <!-- Remplacer "#" par le lien Streamlit Cloud si tu le déploies -->
+                <a href="#" target="_blank" rel="noopener" class="btn btn-sm btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span data-i18n="btn.live">Démo en direct</span></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ---------- 4. GPS Spoofing UAV ---------- -->
+          <article class="project-card reveal" data-category="securite ia">
+            <div class="project-img">
+              
+              <div class="project-cover cover-4"><i class="fa-solid fa-satellite"></i></div>
+            </div>
+            <div class="project-body">
+              <span class="project-type"><span data-i18n="p.personal">Projet personnel</span></span>
+              <h3><span data-i18n="p4.t">Détection de GPS spoofing sur drone</span></h3>
+              <p><span data-i18n="p4.d">Simulation d'un UAV (GPS, IMU, altimètre) et de scénarios d'attaque progressive, brutale et intermittente. Un réseau bayésien estime la probabilité de spoofing à partir de la cohérence entre capteurs.</span></p>
+              <ul class="tags"><li>Python</li><li>pgmpy</li><li><span data-i18n="tag.bayes">Réseau bayésien</span></li><li>Simulation</li><li><span data-i18n="tag.uav">Cybersécurité UAV</span></li></ul>
+              <div class="project-actions">
+                <a href="https://github.com/aboudAG/gps-spoofing-bayesian-uav" target="_blank" rel="noopener" class="btn btn-sm btn-ghost"><i class="fa-brands fa-github"></i> <span data-i18n="btn.code">Voir le code</span></a>
+                <a href="https://github.com/aboudAG/gps-spoofing-bayesian-uav#readme" target="_blank" rel="noopener" class="btn btn-sm btn-primary"><i class="fa-solid fa-chart-line"></i> <span data-i18n="btn.results">Voir les résultats</span></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ---------- 5. Optimisation 5G par IA ---------- -->
+          <article class="project-card reveal" data-category="ia">
+            <div class="project-img">
+              
+              <div class="project-cover cover-5"><i class="fa-solid fa-tower-broadcast"></i></div>
+            </div>
+            <div class="project-body">
+              <span class="project-type"><span data-i18n="p.ter">TER — Master</span></span>
+              <h3><span data-i18n="p5.t">Optimisation 5G par IA</span></h3>
+              <p><span data-i18n="p5.d">Analyse de 14 456 flux 5G répartis en slices eMBB, mMTC et URLLC : détection d'anomalies, prédiction de la latence TCP et recommandations d'optimisation de la QoS.</span></p>
+              <ul class="tags"><li>Python</li><li>XGBoost</li><li>TensorFlow</li><li>Isolation Forest</li><li>5G</li></ul>
+              <div class="project-actions">
+                <a href="https://github.com/aboudAG/Ter-5G-IA" target="_blank" rel="noopener" class="btn btn-sm btn-ghost"><i class="fa-brands fa-github"></i> <span data-i18n="btn.code">Voir le code</span></a>
+                <a href="https://github.com/aboudAG/Ter-5G-IA#readme" target="_blank" rel="noopener" class="btn btn-sm btn-primary"><i class="fa-solid fa-book-open"></i> Documentation</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ---------- 6. Gestion des congés ---------- -->
+          <article class="project-card reveal" data-category="web">
+            <div class="project-img">
+             
+              <div class="project-cover cover-6"><i class="fa-solid fa-calendar-check"></i></div>
+            </div>
+            <div class="project-body">
+              <span class="project-type"><span data-i18n="p.epal">Stage · E.P.A.L., 2024</span></span>
+              <h3><span data-i18n="p6.t">Gestion des congés</span></h3>
+              <p><span data-i18n="p6.d">Application de demandes de congés avec workflow de validation hiérarchique, gestion des structures, soldes annuels, jours fériés, délégations de rôle, notifications et génération de PDF.</span></p>
+              <ul class="tags"><li>Laravel 10</li><li>PHP</li><li>Tailwind CSS</li><li>Alpine.js</li><li>MySQL</li><li>PHPUnit</li></ul>
+              <div class="project-actions">
+                <a href="https://github.com/aboudAG/gestionconge" target="_blank" rel="noopener" class="btn btn-sm btn-ghost"><i class="fa-brands fa-github"></i> <span data-i18n="btn.code">Voir le code</span></a>
+               
+                <a href="#" target="_blank" rel="noopener" class="btn btn-sm btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span data-i18n="btn.live">Démo en direct</span></a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="more-projects reveal">
+          <a href="https://github.com/aboudAG?tab=repositories" target="_blank" rel="noopener" class="btn btn-ghost"><i class="fa-brands fa-github"></i> <span data-i18n="btn.allrepos">Tous mes dépôts GitHub</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <p class="section-kicker"><span data-i18n="contact.kicker">05 — Contact</span></p>
+          <h2 class="section-title"><span data-i18n="contact.title">Travaillons ensemble</span></h2>
+          <p><span data-i18n="contact.p">Une offre de stage, une question sur un projet ou simplement envie d'échanger ? Écrivez-moi, je réponds rapidement.</span></p>
+
+          <div class="socials">
+            <a href="https://www.linkedin.com/in/abdenour-agag-2bb85a29b" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/aboudAG" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:abdenour.agag@gmail.com" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+          <p class="contact-email"><i class="fa-solid fa-envelope"></i> abdenour.agag@gmail.com</p>
+        </div>
+
+        
+        <form class="contact-form reveal" id="contactForm" action="https://formspree.io/f/mnppykag" method="POST" novalidate>
+          <div class="field">
+            <label for="name"><span data-i18n="form.name">Nom</span></label>
+            <input type="text" id="name" name="name" placeholder="Votre nom" data-i18n-ph="ph.name" required />
+            <small class="error-msg"></small>
+          </div>
+          <div class="field">
+            <label for="email"><span data-i18n="form.email">E-mail</span></label>
+            <input type="email" id="email" name="email" placeholder="vous@email.com" data-i18n-ph="ph.email" required />
+            <small class="error-msg"></small>
+          </div>
+          <div class="field">
+            <label for="message"><span data-i18n="form.message">Message</span></label>
+            <textarea id="message" name="message" rows="5" placeholder="Votre message..." data-i18n-ph="ph.message" required></textarea>
+            <small class="error-msg"></small>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block"><span data-i18n="form.send">Envoyer le message</span> <i class="fa-solid fa-paper-plane"></i></button>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== PIED DE PAGE ===================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Abdenour Agag. <span data-i18n="footer"></span></p>
+      <a href="#accueil" class="back-top" aria-label="Retour en haut"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
