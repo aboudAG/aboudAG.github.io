@@ -76,7 +76,7 @@
     <section class="section" id="a-propos">
       <div class="container about-grid">
         <div class="about-photo reveal">
-          
+          <!-- Pour ajouter une photo plus tard : place-la dans assets/img/ sous le nom photo.jpg -->
           <div class="photo-frame">
             <img src="assets/img/photo.jpg" alt="Photo d'Abdenour Agag"
                  onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20400%20400%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%237c8cff%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%235ee7c4%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22%231a1d29%22/%3E%3Ccircle%20cx%3D%22200%22%20cy%3D%22200%22%20r%3D%22120%22%20fill%3D%22none%22%20stroke%3D%22url%28%23g%29%22%20stroke-width%3D%223%22/%3E%3Ctext%20x%3D%22200%22%20y%3D%22228%22%20text-anchor%3D%22middle%22%20font-family%3D%22Inter%2C%20Arial%2C%20sans-serif%22%20font-size%3D%2296%22%20font-weight%3D%22800%22%20fill%3D%22url%28%23g%29%22%3EAA%3C/text%3E%3C/svg%3E';" />
@@ -119,6 +119,16 @@
             </div>
           </li>
 
+          <!-- Formation en Algérie : Master -->
+          <li class="timeline-item reveal">
+            <div class="timeline-dot"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="timeline-card">
+              <p class="timeline-date"><span data-i18n="path.m2.date">Septembre 2024 – Juin 2025</span></p>
+              <h3><span data-i18n="path.m2.title">Master Réseaux et Systèmes Distribués</span></h3>
+              <p class="timeline-place"><span data-i18n="path.usthb">USTHB (Université des Sciences et de la Technologie Houari-Boumédiène) · Alger, Algérie</span></p>
+            </div>
+          </li>
+
           <!-- Expérience -->
           <li class="timeline-item reveal">
             <div class="timeline-dot"><i class="fa-solid fa-briefcase"></i></div>
@@ -128,6 +138,16 @@
               <p class="timeline-place"><span data-i18n="path.e.place">E.P.A.L. (Entreprise Portuaire d'Alger) · Alger, Algérie</span></p>
               <p class="timeline-desc"><span data-i18n="path.e.desc">Analyse des besoins des utilisateurs et développement d'une application web de gestion des congés, puis tests et documentation technique.</span></p>
               <ul class="tags"><li>Laravel</li><li>PHP</li><li>MySQL</li><li>JavaScript</li></ul>
+            </div>
+          </li>
+
+          <!-- Formation en Algérie : Licence -->
+          <li class="timeline-item reveal">
+            <div class="timeline-dot"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="timeline-card">
+              <p class="timeline-date"><span data-i18n="path.l.date">Septembre 2022 – Juin 2024</span></p>
+              <h3><span data-i18n="path.l.title">Licence Ingénierie des Systèmes d'Information et des Logiciels</span></h3>
+              <p class="timeline-place"><span data-i18n="path.usthb">USTHB (Université des Sciences et de la Technologie Houari-Boumédiène) · Alger, Algérie</span></p>
             </div>
           </li>
         </ol>
@@ -298,13 +318,17 @@
           <button class="filter-btn" data-filter="web">Web</button>
         </div>
 
-        
+        <!--
+          Images des projets : place tes captures dans assets/img/projets/
+          puis remplace le bloc <div class="project-cover ..."> par :
+          <img src="assets/img/projets/nom-du-fichier.png" alt="..." loading="lazy" />
+        -->
         <div class="projects-grid">
 
           <!-- ---------- 1. Pipeline DevSecOps ---------- -->
           <article class="project-card reveal" data-category="cloud securite">
             <div class="project-img">
-              
+              <!-- Remplacer l'image ici -->
               <div class="project-cover cover-1"><i class="fa-solid fa-infinity"></i></div>
             </div>
             <div class="project-body">
@@ -322,7 +346,7 @@
           <!-- ---------- 2. Microservices Kubernetes + gRPC ---------- -->
           <article class="project-card reveal" data-category="cloud">
             <div class="project-img">
-              
+              <!-- Remplacer l'image ici -->
               <div class="project-cover cover-2"><i class="fa-solid fa-dharmachakra"></i> </div>
             </div>
             <div class="project-body">
@@ -332,7 +356,7 @@
               <ul class="tags"><li>Kubernetes</li><li>Spring Boot</li><li>gRPC</li><li>PostgreSQL</li><li>Ingress Nginx</li><li>RBAC</li></ul>
               <div class="project-actions">
                 <a href="https://github.com/aboudAG/Projet-Microservices" target="_blank" rel="noopener" class="btn btn-sm btn-ghost"><i class="fa-brands fa-github"></i> <span data-i18n="btn.code">Voir le code</span></a>
-                
+                <!-- Remplacer "#" par le lien d'une démo vidéo (YouTube, Loom...) ou supprimer ce bouton -->
                 <a href="#" target="_blank" rel="noopener" class="btn btn-sm btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span data-i18n="btn.demo">Démo</span></a>
               </div>
             </div>
@@ -341,7 +365,7 @@
           <!-- ---------- 3. IDS par Machine Learning ---------- -->
           <article class="project-card reveal" data-category="securite ia">
             <div class="project-img">
-          
+              <!-- Remplacer l'image ici -->
               <div class="project-cover cover-3"><i class="fa-solid fa-shield-virus"></i></div>
             </div>
             <div class="project-body">
@@ -360,7 +384,7 @@
           <!-- ---------- 4. GPS Spoofing UAV ---------- -->
           <article class="project-card reveal" data-category="securite ia">
             <div class="project-img">
-              
+              <!-- Remplacer l'image ici -->
               <div class="project-cover cover-4"><i class="fa-solid fa-satellite"></i></div>
             </div>
             <div class="project-body">
@@ -378,7 +402,7 @@
           <!-- ---------- 5. Optimisation 5G par IA ---------- -->
           <article class="project-card reveal" data-category="ia">
             <div class="project-img">
-              
+              <!-- Remplacer l'image ici (ex : un des graphiques du dossier results/) -->
               <div class="project-cover cover-5"><i class="fa-solid fa-tower-broadcast"></i></div>
             </div>
             <div class="project-body">
@@ -396,7 +420,7 @@
           <!-- ---------- 6. Gestion des congés ---------- -->
           <article class="project-card reveal" data-category="web">
             <div class="project-img">
-             
+              <!-- Remplacer l'image ici -->
               <div class="project-cover cover-6"><i class="fa-solid fa-calendar-check"></i></div>
             </div>
             <div class="project-body">
@@ -406,7 +430,7 @@
               <ul class="tags"><li>Laravel 10</li><li>PHP</li><li>Tailwind CSS</li><li>Alpine.js</li><li>MySQL</li><li>PHPUnit</li></ul>
               <div class="project-actions">
                 <a href="https://github.com/aboudAG/gestionconge" target="_blank" rel="noopener" class="btn btn-sm btn-ghost"><i class="fa-brands fa-github"></i> <span data-i18n="btn.code">Voir le code</span></a>
-               
+                <!-- Remplacer "#" par le lien de démo -->
                 <a href="#" target="_blank" rel="noopener" class="btn btn-sm btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span data-i18n="btn.live">Démo en direct</span></a>
               </div>
             </div>
@@ -435,7 +459,7 @@
           <p class="contact-email"><i class="fa-solid fa-envelope"></i> abdenour.agag@gmail.com</p>
         </div>
 
-        
+        <!-- Formulaire relié à Formspree : les messages arrivent dans ta boîte mail -->
         <form class="contact-form reveal" id="contactForm" action="https://formspree.io/f/mnppykag" method="POST" novalidate>
           <div class="field">
             <label for="name"><span data-i18n="form.name">Nom</span></label>
@@ -462,7 +486,7 @@
   <!-- ===================== PIED DE PAGE ===================== -->
   <footer class="footer">
     <div class="container footer-inner">
-      <p>© <span id="year"></span> Abdenour Agag. <span data-i18n="footer"></span></p>
+      <p>© <span id="year"></span> Abdenour Agag. <span data-i18n="footer">Conçu et codé à la main.</span></p>
       <a href="#accueil" class="back-top" aria-label="Retour en haut"><i class="fa-solid fa-arrow-up"></i></a>
     </div>
   </footer>

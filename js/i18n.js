@@ -90,7 +90,12 @@
     "path.e.place": "E.P.A.L. (Port of Algiers) · Algiers, Algeria",
     "path.e.desc": "Gathered user requirements and built a leave management web application, then handled testing and technical documentation.",
     "b.rest": "REST API",
-    "p.epal": "Internship · E.P.A.L., 2024"
+    "p.epal": "Internship · E.P.A.L., 2024",
+    "path.m2.date": "September 2024 – June 2025",
+    "path.m2.title": "Master's in Networks and Distributed Systems",
+    "path.l.date": "September 2022 – June 2024",
+    "path.l.title": "Bachelor's in Information Systems and Software Engineering",
+    "path.usthb": "USTHB (University of Science and Technology Houari Boumediene) · Algiers, Algeria"
 };
 
   // Phrases de l'effet "machine à écrire" du Hero
